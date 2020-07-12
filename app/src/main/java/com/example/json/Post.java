@@ -1,22 +1,22 @@
 package com.example.json;
 
+import com.google.gson.JsonObject;
 import com.google.gson.annotations.SerializedName;
+
+import java.util.ArrayList;
 
 public class Post {
 
-    @SerializedName("type")
 
-    public String type;
+    @SerializedName("actor")
 
+    public JsonObject actor;
 
-    public String getType() {
-        return type;
+    public JsonObject getActor() {
+        return actor;
     }
 
-
-    public void setType(String type) {
-        this.type = type;
+    public void setActor(JsonObject actor) {
+        this.actor = actor;
     }
-
-
 }
